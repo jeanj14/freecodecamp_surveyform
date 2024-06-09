@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>freeCodeCamp Survey</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
+
+  <div class="survey-form">
+  <form id="survey-form">
+    <fieldset class="form-group">
+      <div class="div-group">
+        <label id="name-label">Name</label>
+        <input id="name" type="text" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="div-group">
+        <label id="email-label">Email</label>
+        <input id="email" type="email" class="form-control" placeholder="Enter your Email" required>
+      </div>
+      <div class="div-group">
+        <label id="number-label">Age</label>
+        <input id="number" class="form-control" placeholder="Age" min=0 max=100 type="number" required> 
+      </div>
+      <label for="dropdown">Which option best descriibes your current role?</label>
+      <select id="dropdown" class="form-control" required>
+        <option>Select current role</option>
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Prefer Not to Say</option>
+        <option>Other</option>
+      </select>
+    </fieldset>
+    <fieldset class="form-group">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <div class="div-radio">
+          <label>Definitely</label><input type="radio" name="option" value ="definitely" class="input-radio" checked></input>
+        </div>
+        <div class="div-radio">
+          <label>Maybe</label><input type="radio" name="option" value ="definitely" class="input-radio"></input>
+        </div>
+        <div class="div-radio">
+          <label>Not sure</label><input type="radio" name="option" value ="definitely" class="input-radio"></input>
+        </div>
+    </fieldset>
+    
+    <fieldset class="form-group">
+      <label>What is your favorite feature of freeCodeCamp?</label>
+      <select class="form-control" required>
+        <option>Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="open-source">Open-source</option>
+      </select>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <div class="div-group">
+        <label>What would you like to see improved? (Check all that apply) </label>
+        <input class="input-checkbox" type="checkbox" value="Front-end projects"><label>Front-end Projects</label>
+     <input class="input-checkbox" type="checkbox" value="Back-end projects"><label>Back-end Projects</label>
+        <input class="input-checkbox" type="checkbox" value="Data Visualization"><label>Data Visualization</label>
+     <input class="input-checkbox" type="checkbox" value="Challenges"><label>Challenges</label>
+        <input class="input-checkbox" type="checkbox" value="Open-source Community"><label>Open-source Community</label>
+     <input class="input-checkbox" type="checkbox" value="Gitter help rooms"><label>Gitter help rooms</label>
+        <input class="input-checkbox" type="checkbox" value="Videos"><label>Videos</label>
+     <input class="input-checkbox" type="checkbox" value="City Meetups"><label>City Meetups</label>
+        <input class="input-checkbox" type="checkbox" value="Wiki"><label>Wiki</label>
+     <input class="input-checkbox" type="checkbox" value="Forum"><label>Forum</label>
+      <input class="input-checkbox" type="checkbox" value="Additional Courses"><label>Additional Courses</label>
+      </div>
+  
+    <label>Any comments or suggestions?</label>
+    <textarea class="input-textarea" placeholder="Enter your comment here"></textarea>
+  
+  
+    <input id="submit" type="submit">
+    </fieldset>
+  </form>
+  </div>
+</html>

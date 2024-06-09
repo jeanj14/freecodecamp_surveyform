@@ -1,0 +1,101 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+.survey-form{
+    background-color: rgba(36, 36, 68, 0.5);
+    border-radius: 1%;
+    color: #fff;
+    width: 720px;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+}
+
+body{
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url(pexels-pixabay-326900.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input {
+    margin: 10px;
+}
+
+header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* .survey-form *{
+    display: block;
+} */
+
+.form-group {
+    margin: 10px 25px;
+    padding: 60px 40px;
+}
+
+.div-radio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+
+.div-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+input[type="submit"]{
+    justify-content: center;
+    padding: 15px 30px;
+    margin: 25px auto 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #34ab64;
+    color: #fff;
+    width: 100%;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    margin: 0 auto;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+  }
+
+  .input-radio,
+.input-checkbox {
+  display: block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+  
